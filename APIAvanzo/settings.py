@@ -60,6 +60,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'APIAvanzo.urls'
 
+# Directorio para almacenar archivos de medios (imágenes, archivos subidos por usuarios)
+MEDIA_URL = '/media/'  # Ruta pública para los archivos de media
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Ruta absoluta en el sistema de archivos
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
