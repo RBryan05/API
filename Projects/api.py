@@ -1,10 +1,10 @@
-from .models import Preguntas
+from .models import Jugadores
 from rest_framework import viewsets, permissions
-from .serializers import PreguntasSerializer
+from .serializers import JugadoresSerializer
 
-class PreguntasViewSet(viewsets.ModelViewSet):
-    queryset = Preguntas.objects.all()
+class JugadoresViewSet(viewsets.ModelViewSet):
+    queryset = Jugadores.objects.all()
     permission_classes = [
         permissions.AllowAny
     ]
-    serializer_class = PreguntasSerializer
+    serializer_class = JugadoresSerializer

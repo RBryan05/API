@@ -1,8 +1,8 @@
 from rest_framework import routers
-from Projects.api import PreguntasViewSet
+from Projects.api import JugadoresViewSet
 
 router = routers.DefaultRouter()
 
-router.register('api/preguntas', PreguntasViewSet, 'preguntas')
+router.register('api/jugadores', JugadoresViewSet, 'jugadores')
 
 urlpatterns = router.urls
